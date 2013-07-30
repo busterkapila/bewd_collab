@@ -1,7 +1,14 @@
 class StoryBoard
-	stories = []
+	# attr_reader :story, :channel
 
-	def add_story(story)
-		
+	@@stories = []
+
+	def self.add_story(story)
+		@@stories << story
+	end
+
+	def self.stories
+		@@stories
 	end
 end
+

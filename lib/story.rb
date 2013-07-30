@@ -1,15 +1,15 @@
 class Story
-	attr_accessor :title, :category
 
-	def initialize(title, category)
-		@title = title
-		@category = category
+	attr_reader :story, :channel
+
+	# attr_accessor :story, :channel
+
+	def initialize(story, channel)
+		@story = story
+		@channel = channel
 	end
 
-	def upvote
-		title
-	end
-
-	def downvote 
+	def to_s
+		"Story #{story}, Channel #{channel}"
 	end
 end
